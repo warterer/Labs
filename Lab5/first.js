@@ -1,10 +1,8 @@
 const seq = (f) => (g) => {
-    if (typeof g === 'number')
-    {
+    if (typeof g === 'number') {
         return f(g);
     }
-    else
-    {
+    else {
         return seq(x => f(g(x)));
     }
 }
