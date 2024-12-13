@@ -5,11 +5,11 @@ const sum = (...args) => {
     {
         do
         {
-            total += args[i];
+            res += args[i];
             i++;
         } while (i < args.length);
     }
     return res;
 }
-const c = sum()
-console.log(c);
+const d = sum(1, -1, 1)
+console.log(d);
